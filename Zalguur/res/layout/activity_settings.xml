@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip">
+ 
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_gateway"
+        android:singleLine="true"
+        android:layout_marginBottom="5dip"/>
+     
+    <EditText android:id="@+id/txtGateway"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:hint="@string/hint_gateway"
+        android:inputType="phone"/>
+     
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_pin"
+        android:layout_marginBottom="5dip"/>
+     
+    <EditText android:id="@+id/txtPin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:singleLine="true"
+        android:hint="@string/hint_pin"
+        android:inputType="phone"/>
+     
+    <Button android:id="@+id/btnSave"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"/>
+
+    <Button android:id="@+id/btnClear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"/>
+    
+    <Button android:id="@+id/btnCancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"/>
+ 
+</LinearLayout> -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.zalguur.PrefSettingsActivity">
+ 
+    <TextView android:id="@+id/txtViewGateway"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_gateway"
+        android:singleLine="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+     
+    <EditText android:id="@+id/txtGateway"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtViewGateway"
+        android:hint="@string/hint_gateway"
+        android:inputType="phone"/>
+     
+    <TextView android:id="@+id/txtViewPin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_pin"
+        android:layout_below="@id/txtGateway"/>
+     
+    <EditText android:id="@+id/txtPin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtViewPin"
+        android:singleLine="true"
+        android:hint="@string/hint_pin"
+        android:inputType="phone"/>
+     
+    <Button android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPin"
+        android:text="@string/save"/>
+    
+    <Button android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnSave"
+        android:layout_alignBaseline="@id/btnSave"
+        android:layout_alignBottom="@id/btnSave"
+        android:text="@string/clear"/>
+ 
+    <Button android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btnSave"
+        android:layout_alignBottom="@id/btnSave"
+        android:layout_alignParentRight="true"
+        android:text="@string/cancel"/>
+</RelativeLayout>
